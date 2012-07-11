@@ -165,7 +165,6 @@
 //usage:     "\n		(default: 0 - disabled)"
 
 #include <syslog.h>
-#include <sys/socket.h> /* un.h may need this */
 #include <sys/un.h>
 
 #include "libbb.h"
@@ -1141,7 +1140,7 @@ int inetd_main(int argc UNUSED_PARAM, char **argv)
 	struct sigaction sa, saved_pipe_handler;
 	servtab_t *sep, *sep2;
 	struct passwd *pwd;
-	struct group *grp = NULL; /* for compiler */
+	struct group *grp = grp; /* for compiler */
 	int opt;
 	pid_t pid;
 	sigset_t omask;
@@ -1622,7 +1621,7 @@ static uint32_t machtime(void)
 	struct timeval tv;
 
 	gettimeofday(&tv, NULL);
-	return htonl((uint32_t)(tv.tv_sec + 2208988800UL));
+	return htonl((uint32_t)(tv.tv_sec + 2208988800));
 }
 /* ARGSUSED */
 static void FAST_FUNC machtime_stream(int s, servtab_t *sep UNUSED_PARAM)

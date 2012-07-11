@@ -23,7 +23,7 @@ libpwdgrp/uidgid_get.c
 
 miscutils/adjtimex.c miscutils/bbconfig.c miscutils/crond.c miscutils/crontab.c miscutils/dc.c miscutils/devmem.c miscutils/less.c miscutils/man.c
 miscutils/fbsplash.c miscutils/flash_lock_unlock.c miscutils/flashcp.c miscutils/mountpoint.c miscutils/nandwrite.c
-miscutils/rx.c miscutils/setserial.c miscutils/setsid.c miscutils/strings.c miscutils/taskset.c miscutils/time.c miscutils/timeout.c miscutils/ttysize.c
+miscutils/rx.c miscutils/setserial.c miscutils/setsid.c miscutils/strings.c miscutils/time.c miscutils/timeout.c miscutils/ttysize.c
 
 modutils/modinfo.c modutils/modprobe-small.c modutils/modutils.c
 modutils/lsmod.c modutils/depmod.c modutils/rmmod.c modutils/insmod.c
@@ -38,9 +38,9 @@ procps/lsof.c procps/pstree.c procps/pwdx.c
 
 shell/ash.c shell/ash_ptr_hack.c shell/math.c shell/random.c shell/shell_common.c
 
-util-linux/blkid.c util-linux/dmesg.c util-linux/fdisk.c util-linux/flock.c util-linux/freeramdisk.c util-linux/getopt.c util-linux/hexdump.c util-linux/losetup.c util-linux/lspci.c util-linux/lsusb.c util-linux/mkfs_ext2.c util-linux/mkswap.c util-linux/more.c util-linux/mount.c util-linux/rdev.c util-linux/rev.c util-linux/swaponoff.c util-linux/umount.c
-
-util-linux/blockdev.c
-
+util-linux/blkid.c util-linux/blockdev.c util-linux/dmesg.c util-linux/fdisk.c util-linux/flock.c util-linux/freeramdisk.c util-linux/getopt.c
+util-linux/hexdump.c util-linux/losetup.c util-linux/lspci.c util-linux/lsusb.c util-linux/mkfs_ext2.c util-linux/mkswap.c util-linux/more.c
+util-linux/mount.c util-linux/rdev.c util-linux/rev.c util-linux/swaponoff.c util-linux/umount.c
 util-linux/volume_id/get_devname.c util-linux/volume_id/volume_id.c util-linux/volume_id/util.c util-linux/volume_id/ext.c
 util-linux/volume_id/fat.c util-linux/volume_id/iso9660.c util-linux/mkfs_vfat.c util-linux/volume_id/ntfs.c util-linux/volume_id/linux_swap.c
+

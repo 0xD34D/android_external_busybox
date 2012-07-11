@@ -1,8 +1,8 @@
 /*
  * Automatically generated C config: don't edit
- * Busybox version: 1.20.1-cm9
+ * Busybox version: 1.20.1-cm7
  */
-#define AUTOCONF_TIMESTAMP "2012-07-09 18:28 +0200"
+#define AUTOCONF_TIMESTAMP "2012-05-28 03:56 +0200"
 
 #define CONFIG_HAVE_DOT_CONFIG 1
 #define ENABLE_HAVE_DOT_CONFIG 1
@@ -2392,10 +2392,10 @@
 #define ENABLE_FEATURE_EJECT_SCSI 0
 #define IF_FEATURE_EJECT_SCSI(...)
 #define IF_NOT_FEATURE_EJECT_SCSI(...) __VA_ARGS__
-#define CONFIG_FBSPLASH 1
-#define ENABLE_FBSPLASH 1
-#define IF_FBSPLASH(...) __VA_ARGS__
-#define IF_NOT_FBSPLASH(...)
+#undef CONFIG_FBSPLASH
+#define ENABLE_FBSPLASH 0
+#define IF_FBSPLASH(...)
+#define IF_NOT_FBSPLASH(...) __VA_ARGS__
 #define CONFIG_FLASHCP 1
 #define ENABLE_FLASHCP 1
 #define IF_FLASHCP(...) __VA_ARGS__
@@ -2516,14 +2516,14 @@
 #define ENABLE_STRINGS 1
 #define IF_STRINGS(...) __VA_ARGS__
 #define IF_NOT_STRINGS(...)
-#define CONFIG_TASKSET 1
-#define ENABLE_TASKSET 1
-#define IF_TASKSET(...) __VA_ARGS__
-#define IF_NOT_TASKSET(...)
-#define CONFIG_FEATURE_TASKSET_FANCY 1
-#define ENABLE_FEATURE_TASKSET_FANCY 1
-#define IF_FEATURE_TASKSET_FANCY(...) __VA_ARGS__
-#define IF_NOT_FEATURE_TASKSET_FANCY(...)
+#undef CONFIG_TASKSET
+#define ENABLE_TASKSET 0
+#define IF_TASKSET(...)
+#define IF_NOT_TASKSET(...) __VA_ARGS__
+#undef CONFIG_FEATURE_TASKSET_FANCY
+#define ENABLE_FEATURE_TASKSET_FANCY 0
+#define IF_FEATURE_TASKSET_FANCY(...)
+#define IF_NOT_FEATURE_TASKSET_FANCY(...) __VA_ARGS__
 #define CONFIG_TIME 1
 #define ENABLE_TIME 1
 #define IF_TIME(...) __VA_ARGS__

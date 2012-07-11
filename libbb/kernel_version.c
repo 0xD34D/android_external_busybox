@@ -20,15 +20,18 @@
 int FAST_FUNC get_linux_version_code(void)
 {
 	struct utsname name;
-	char *s, *t;
+	char *s;
 	int i, r;
 
-	uname(&name); /* never fails */
+	if (uname(&name) == -1) {
+		bb_perror_msg("can't get system information");
+		return 0;
+	}
+
 	s = name.release;
 	r = 0;
 	for (i = 0; i < 3; i++) {
-		t = strtok(s, ".");
-		r = r * 256 + (t ? atoi(t) : 0);
+		r = r * 256 + atoi(strtok(s, "."));
 		s = NULL;
 	}
 	return r;
